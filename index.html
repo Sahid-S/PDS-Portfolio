@@ -4,602 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSc Data Science Graduates | The American College, Madurai</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #374151;
-            background: #f8fafc;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
-            color: #ffffff;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 40px;
-            color: #e2e8f0;
-            line-height: 1.6;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-primary {
-            background: #3b82f6;
-            color: #ffffff;
-            padding: 16px 40px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-primary:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: #ffffff;
-            padding: 16px 40px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            border: 2px solid #ffffff;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .btn-secondary:hover {
-            background: #ffffff;
-            color: #0f172a;
-        }
-
-        /* Cohort Section */
-        .cohort {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 80px 20px;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 60px;
-            color: #0f172a;
-        }
-
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        .student-card {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-            transition: all 0.3s ease;
-            border: 1px solid #e2e8f0;
-        }
-
-        .student-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-        }
-
-        .card-header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .student-photo {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            flex-shrink: 0;
-            overflow: hidden;
-        }
-
-        .student-info h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #0f172a;
-            margin-bottom: 5px;
-        }
-
-        .specialization {
-            font-size: 0.95rem;
-            color: #3b82f6;
-            font-weight: 600;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 20px;
-        }
-
-        .skill-tag {
-            background: #eff6ff;
-            color: #1e40af;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        .impact {
-            background: #f0fdf4;
-            border-left: 4px solid #10b981;
-            padding: 15px;
-            margin-bottom: 20px;
-            font-size: 0.95rem;
-            color: #064e3b;
-            font-style: italic;
-        }
-
-        .card-actions {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .btn-resume {
-            background: #0f172a;
-            color: #ffffff;
-            padding: 14px 20px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            text-align: center;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-        }
-
-        .btn-resume:hover {
-            background: #1e3a5f;
-            transform: scale(1.02);
-        }
-
-        .social-links {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-        }
-
-        .social-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 10px 18px;
-            border: 2px solid #e5e7eb;
-            border-radius: 8px;
-            text-decoration: none;
-            color: #4b5563;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-link:hover {
-            border-color: #3b82f6;
-            color: #3b82f6;
-            background: #eff6ff;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: #f1f5f9;
-            padding: 80px 20px;
-        }
-
-        .contact-container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact-form {
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-        }
-
-        .form-group {
-            margin-bottom: 24px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #374151;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 16px;
-            border: 2px solid #e5e7eb;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            font-family: inherit;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .btn-submit {
-            width: 100%;
-            background: #3b82f6;
-            color: #ffffff;
-            padding: 16px;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .btn-submit:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
-        }
-
-        /* Footer */
-        .footer {
-            background: #0f172a;
-            color: #9ca3af;
-            text-align: center;
-            padding: 30px 20px;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .cards-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-            }
-
-            .btn-primary,
-            .btn-secondary {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span>MSc Data Science</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="cohort.html">Cohort</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="hero-content">
             <h1>MSc Data Science Graduates: Ready to Deliver Impact Now</h1>
             <p>Rigorously trained in Cloud Platforms, MLOps, and Ethical AI. Industry-ready professionals equipped with hands-on experience in end-to-end data solutions. Ready for immediate deployment.</p>
             <div class="cta-buttons">
-                <a href="#cohort" class="btn-primary">View Our Talent Pool</a>
+                <a href="cohort.html" class="btn-primary">View Our Talent Pool</a>
                 <a href="#" class="btn-secondary" onclick="downloadAllResumes(event)">Download All Resumes</a>
             </div>
         </div>
     </section>
 
-    <!-- Cohort Section -->
-    <section class="cohort" id="cohort">
-        <h2 class="section-title">The Cohort</h2>
-        <div class="cards-grid" id="cards-container">
-            
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="contact-container">
-            <h2 class="section-title">Hiring Inquiry</h2>
-            <form class="contact-form" onsubmit="handleSubmit(event)">
-                <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required>
+    <!-- Quick Overview Section -->
+    <section class="about">
+        <div class="about-container">
+            <h2 class="section-title">Why Hire Our Graduates?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>
+                        <svg width="24" height="24" fill="none" stroke="#3b82f6" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Industry-Ready Skills
+                    </h3>
+                    <ul>
+                        <li>Hands-on experience with Python, SQL, and ML frameworks</li>
+                        <li>Proficient in Big Data Analytics and Cloud Computing</li>
+                        <li>Strong foundation in Statistics and Data Visualization</li>
+                        <li>Experience with real-world capstone projects</li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <label for="organization">Organization *</label>
-                    <input type="text" id="organization" name="organization" required>
+                <div class="about-card">
+                    <h3>
+                        <svg width="24" height="24" fill="none" stroke="#3b82f6" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        Immediate Impact
+                    </h3>
+                    <ul>
+                        <li>96-credit comprehensive curriculum</li>
+                        <li>Internship and project experience</li>
+                        <li>Trained by expert faculty with industry experience</li>
+                        <li>Strong problem-solving and analytical skills</li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Connect with Placement Coordinator</button>
-            </form>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 MSc Data Science Program | The American College, Madurai | Building Tomorrow's Data Leaders</p>
+        <p>&copy; 2025 MSc Data Science Program | <a href="about.html">The American College, Madurai</a> | Building Tomorrow's Data Leaders</p>
     </footer>
 
-    <script>
-        // Student data
-        const students = [
-            {
-                name: 'Tony Renold',
-                specialization: 'Web Developer - Buisness Analyst - Mlops Engineer',
-                skills: ['Python', 'R', 'SQL', 'MongoDB','Docker','Power BI'],
-                impact: ['Developed an Oil and Fuel Analysis and Forecasting system using Machine Learning.'],
-                rollNumber: '24pds040',
-                profileImage: 'assets/profile/24pds040.jpg',
-                linkedin: 'https://www.linkedin.com/in/tony-renold-3549a9234/',
-                github: 'https://github.com/tony5536'
-            },
-            {
-                name: 'Sahid S',
-                specialization: 'Python Developer - Data Scientist - AI/ML Engineer',
-                skills: ['Python', 'SQL', 'Scikit-learn', 'TensorFlow', 'React - React Native', 'Flask'],
-                impact: 'Developed an AI-integrated IPL win prediction system using Machine Learning and an enhanced fan engagement Chatbot.',
-                rollNumber: '24pds029',
-                profileImage: 'assets/profile/24pds029.jpg',
-                linkedin: 'https://www.linkedin.com/in/sahid-dev/',
-                github: 'https://github.com/Sahid-S'
-            },
-            {
-                name: 'Jayasurya B M',
-                specialization: 'AI/ML Engineer - GEN AI Specialist - Agentic AI Developer',
-                skills: ['Python', 'SQL', 'Power BI', 'scikit-learn', 'NumPy', 'Pandas'],
-                impact: ' Developed Hospital Readmission Prediction system using Machine Learning.',
-                rollNumber: '24pds016',
-                profileImage: 'assets/profile/24pds016.jpg',
-                linkedin: 'https://linkedin.com/in/jayasurya-b-m-77b272281',
-                github: 'https://github.com/Jayasurya07-hub'
-            },
-            {
-                name: 'Bavitha Sree V',
-                specialization: 'Business Intelligence Analyst - Data Analyst - AI Driven Healthcare Solutions',
-                skills: ['Python', 'SQL', 'Power BI', 'Excel','Html'],
-                impact: 'Developed Customer Churn Prediction using Machine Learning & Power BI.',
-                rollNumber: '24pds006',
-                profileImage: 'assets/profile/24pds006.jpg',
-                linkedin: 'https://www.linkedin.com/in/bavithasree-v',
-                github: 'https://github.com/BavithaSree-V'
-            },
-            {
-                name: 'Naveen Prashad R J',
-                specialization: 'Data Scientist - Business Analyst - ML Engineer',
-                skills: ['Python','SQL','Power BI','Tableau','Excel'],
-                impact: 'Developed Gym Data Analysis and Calories Burned Prediction system using Machine Learning.',
-                rollNumber: '24pds022',
-                profileImage: 'assets/profile/24pds022.jpg',
-                linkedin: 'https://www.linkedin.com/in/naveen-prashad-1342a3358',
-                github: 'https://github.com/NaveenShakthi07'
-            },
-            {
-                name: 'Ajith Kumar T',
-                specialization: 'Web Developer - Data Scientist - MLops Engineer',
-                skills: ['Python', 'Django', 'HTML', 'Tailwind CSS','Hugging Face','Linux','Figma'],
-                impact: 'Developed Stock Price Prediction System using Machine Learning.',
-                rollNumber: '24pds004',
-                profileImage: 'assets/profile/24pds004.jpg',
-                linkedin: 'https://www.linkedin.com/in/ajithkumar-t-developer/',
-                github: 'https://github.com/ajithkumart445'
-            },
-            {
-                name: 'Akshaya Sri S',
-                specialization: 'Data Scientist - Business Analyst - ML Engineer',
-                skills: ['Python','SQL','Power BI','Tableau','Excel'],
-                impact: 'Developed a system for Hybe Entertainment K-pop analysis using Machine Learning.',
-                rollNumber: '24pds005',
-                profileImage: 'assets/profile/24pds005.jpg',
-                linkedin: 'https://www.linkedin.com/in/akshaya-sri-558795347',
-                github: 'https://github.com/AKSHAYAS7'
-            }
-        ];
-
-        // Function to create a student card
-        function createStudentCard(student, index) {
-            const card = document.createElement('div');
-            card.className = 'student-card';
-
-            const skillsHTML = student.skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('');
-
-            card.innerHTML = `
-                <div class="card-header">
-                    <div class="student-photo">
-                        <img src="${student.profileImage}" alt="${student.name}" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
-                    </div>
-                    <div class="student-info">
-                        <h3>${student.name}</h3>
-                        <div class="specialization">${student.specialization}</div>
-                    </div>
-                </div>
-                <div class="skills">
-                    ${skillsHTML}
-                </div>
-                <div class="impact">
-                    ${student.impact}
-                </div>
-                <div class="card-actions">
-                    <a href="#" class="btn-resume" onclick="downloadResume(event, ${index})">Download Full Resume (PDF)</a>
-                    <div class="social-links">
-                        <a href="${student.linkedin || '#'}" class="social-link" target="_blank" rel="noopener noreferrer">
-                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            LinkedIn
-                        </a>
-                        <a href="${student.github || '#'}" class="social-link" target="_blank" rel="noopener noreferrer">
-                            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            GitHub
-                        </a>
-                    </div>
-                </div>
-            `;
-
-            return card;
-        }
-
-        // Function to render all student cards
-        function renderStudentCards() {
-            const container = document.getElementById('cards-container');
-            students.forEach((student, index) => {
-                const card = createStudentCard(student, index);
-                container.appendChild(card);
-            });
-        }
-
-        // Initialize the cards when the page loads
-        document.addEventListener('DOMContentLoaded', renderStudentCards);
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    e.preventDefault();
-                    document.querySelector(href).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Form submission handler
-        function handleSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
-            const formData = new FormData(form);
-            
-            // Here you would typically send the data to your server
-            console.log('Form submitted:', Object.fromEntries(formData));
-            
-            alert('Thank you for your interest! The placement coordinator will contact you within 24 hours.');
-            form.reset();
-        }
-
-        // Download resume handler
-        function downloadResume(event, index) {
-            event.preventDefault();
-            const student = students[index];
-            
-            // Create a temporary link to download the resume
-            const link = document.createElement('a');
-            link.href = `assets/resume/${student.rollNumber}.pdf`;
-            link.download = `${student.name.replace(' ', '_')}_Resume.pdf`;
-            link.target = '_blank';
-            
-            // Check if the file exists by trying to load it
-            fetch(link.href)
-                .then(response => {
-                    if (response.ok) {
-                        document.body.appendChild(link);
-                        link.click();
-                        document.body.removeChild(link);
-                        alert(`Resume download started for ${student.name} (Roll No: ${student.rollNumber})`);
-                    } else {
-                        alert(`Resume for ${student.name} (Roll No: ${student.rollNumber}) is not available yet.\n\nPlease contact the placement coordinator for resume requests.`);
-                    }
-                })
-                .catch(error => {
-                    console.error('Error downloading resume:', error);
-                    alert(`Resume for ${student.name} (Roll No: ${student.rollNumber}) is not available yet.\n\nPlease contact the placement coordinator for resume requests.`);
-                });
-        }
-
-        // Download all resumes handler
-        function downloadAllResumes(event) {
-            event.preventDefault();
-            
-            // Path to the ZIP file containing all resumes
-            const zipFilePath = 'assets/resume/all-resumes.zip';
-            const link = document.createElement('a');
-            link.href = zipFilePath;
-            link.download = 'MSc_Data_Science_Resumes.zip';
-            link.target = '_blank';
-            
-            // Check if the ZIP file exists
-            fetch(zipFilePath, { method: 'HEAD' })
-                .then(response => {
-                    if (response.ok) {
-                        document.body.appendChild(link);
-                        link.click();
-                        document.body.removeChild(link);
-                        alert('Download started: MSc Data Science Resumes (ZIP)\n\nThe ZIP file contains all available student resumes.');
-                    } else {
-                        alert('Resume collection is not available yet.\n\nPlease contact the placement coordinator for bulk resume requests.');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error downloading ZIP file:', error);
-                    alert('Resume collection is not available yet.\n\nPlease contact the placement coordinator for bulk resume requests.');
-                });
-        }
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>

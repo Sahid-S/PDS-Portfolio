@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | MSc Data Science - The American College, Madurai</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span>MSc Data Science</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="cohort.html">Cohort</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Hiring Inquiry</h1>
+        <p>Connect with our placement coordinator to hire talented data science graduates</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-container">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="organization">Organization *</label>
+                    <input type="text" id="organization" name="organization" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="positions">Number of Positions</label>
+                    <input type="number" id="positions" name="positions" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Tell us about the roles you're hiring for, required skills, and any other relevant details..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Connect with Placement Coordinator</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="about">
+        <div class="about-container">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>
+                        <svg width="24" height="24" fill="none" stroke="#3b82f6" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        Address
+                    </h3>
+                    <p>Department of Data Science</p>
+                    <p>The American College</p>
+                    <p>Madurai - 625002</p>
+                    <p>Tamil Nadu, India</p>
+                </div>
+                <div class="about-card">
+                    <h3>
+                        <svg width="24" height="24" fill="none" stroke="#3b82f6" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        Get in Touch
+                    </h3>
+                    <p>For placement inquiries and collaboration opportunities, please fill out the contact form or reach out to us directly.</p>
+                    <div class="highlight-box">
+                        <p>Our placement coordinator will respond within 24 hours of receiving your inquiry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 MSc Data Science Program | <a href="about.html">The American College, Madurai</a> | Building Tomorrow's Data Leaders</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
