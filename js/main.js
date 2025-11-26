@@ -69,7 +69,18 @@ const students = [
         profileImage: 'assets/profile/24pds005.jpg',
         linkedin: 'https://www.linkedin.com/in/akshaya-sri-558795347',
         github: 'https://github.com/AKSHAYAS7'
+    },
+    {
+        name: 'Sudhagar R',
+        specialization: 'Network Management and Administrator - Data Analyst - Web Development',
+        skills: ['Python', 'JavaScript', 'Burp Suite', 'AWS'],
+        impact: 'Developed an anonymized dataset for network forensics and Intrusion Detection System (IDS) evaluation.',
+        rollNumber: '24pds035',
+        profileImage: 'assets/profile/24pds035.jpg',
+        linkedin: 'https://www.linkedin.com/in/sudhagar-raja-4283b2298/',
+        github: 'https://github.com/sudhagar-raja'
     }
+    
 ];
 
 // Function to create a student card
