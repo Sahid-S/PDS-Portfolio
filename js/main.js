@@ -1,3 +1,44 @@
+// Load component HTML
+async function loadComponent(elementId, componentPath) {
+    try {
+        const response = await fetch(componentPath);
+        if (response.ok) {
+            const html = await response.text();
+            document.getElementById(elementId).innerHTML = html;
+
+            // Set active nav link based on current page
+            if (elementId === 'navbar-placeholder') {
+                setActiveNavLink();
+            }
+        }
+    } catch (error) {
+        console.error(`Error loading component ${componentPath}:`, error);
+    }
+}
+
+// Set active class on current page's nav link
+function setActiveNavLink() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const pageName = currentPage.replace('.html', '');
+
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('data-page');
+        if (linkPage === pageName || (pageName === '' && linkPage === 'index')) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Load navbar and footer components
+function loadComponents() {
+    loadComponent('navbar-placeholder', 'components/navbar.html');
+    loadComponent('footer-placeholder', 'components/footer.html');
+}
+
+// Initialize components when DOM is ready
+document.addEventListener('DOMContentLoaded', loadComponents);
+
 // Student data
 const students = [
     {
@@ -164,17 +205,46 @@ function toggleNav() {
     navLinks.classList.toggle('active');
 }
 
-// Form submission handler
-function handleSubmit(event) {
-    event.preventDefault();
-    const form = event.target;
-    const formData = new FormData(form);
+// Contact form submission handler
+function initContactForm() {
+    const form = document.querySelector('.contact-form');
+    if (!form) return;
 
-    console.log('Form submitted:', Object.fromEntries(formData));
+    const submitBtn = form.querySelector('button[type="submit"]');
 
-    alert('Thank you for your interest! The placement coordinator will contact you within 24 hours.');
-    form.reset();
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = "Sending...";
+        submitBtn.disabled = true;
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                alert("Success! Your message has been sent. The placement coordinator will contact you within 24 hours.");
+                form.reset();
+            } else {
+                alert("Error: " + (data.message || "Something went wrong."));
+            }
+        } catch (error) {
+            alert("Something went wrong. Please try again.");
+        } finally {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }
+    });
 }
+
+// Initialize contact form when DOM is ready
+document.addEventListener('DOMContentLoaded', initContactForm);
 
 // Download resume handler
 function downloadResume(event, index) {
