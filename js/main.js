@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', loadComponents);
 // Student data
 const students = [
     {
+        id:1,
         name: 'Tony Renold',
         specialization: 'Web Developer - Business Analyst - MLops Engineer',
         skills: ['Python', 'R', 'SQL', 'MongoDB', 'Docker', 'Power BI'],
@@ -52,6 +53,7 @@ const students = [
         github: 'https://github.com/tony5536'
     },
     {
+        id:2,
         name: 'Sahid S',
         specialization: 'Python Developer - Data Scientist - AI/ML Engineer',
         skills: ['Python', 'SQL', 'Scikit-learn', 'TensorFlow', 'React - React Native', 'Flask'],
@@ -62,9 +64,10 @@ const students = [
         github: 'https://github.com/Sahid-S'
     },
     {
+        id:3,
         name: 'Jayasurya B M',
         specialization: 'AI/ML Engineer - GEN AI Specialist - Agentic AI Developer',
-        skills: ['Python', 'SQL', 'Power BI', 'scikit-learn', 'NumPy', 'Pandas'],
+        skills: ['Python', 'SQL', 'Power BI', 'scikit-learn', 'Tableau'],
         impact: 'Developed Hospital Readmission Prediction system using Machine Learning.',
         rollNumber: '24pds016',
         profileImage: 'assets/profile/24pds016.jpg',
@@ -72,6 +75,7 @@ const students = [
         github: 'https://github.com/Jayasurya07-hub'
     },
     {
+        id:4,
         name: 'Bavitha Sree V',
         specialization: 'Business Intelligence Analyst - Data Analyst - AI Driven Healthcare Solutions',
         skills: ['Python', 'SQL', 'Power BI', 'Excel', 'Html'],
@@ -82,6 +86,7 @@ const students = [
         github: 'https://github.com/BavithaSree-V'
     },
     {
+        id:5,
         name: 'Naveen Prashad R J',
         specialization: 'Data Scientist - Business Analyst - ML Engineer',
         skills: ['Python', 'SQL', 'Power BI', 'Tableau', 'Excel'],
@@ -92,6 +97,7 @@ const students = [
         github: 'https://github.com/NaveenShakthi07'
     },
     {
+        id:6,
         name: 'Ajith Kumar T',
         specialization: 'Web Developer - Data Scientist - MLops Engineer',
         skills: ['Python', 'Django', 'HTML', 'Tailwind CSS', 'Hugging Face', 'Linux', 'Figma'],
@@ -102,6 +108,7 @@ const students = [
         github: 'https://github.com/ajithkumart445'
     },
     {
+        id:7,
         name: 'Akshaya Sri S',
         specialization: 'Data Scientist - Business Analyst - ML Engineer',
         skills: ['Python', 'SQL', 'Power BI', 'Tableau', 'Excel'],
@@ -112,6 +119,7 @@ const students = [
         github: 'https://github.com/AKSHAYAS7'
     },
     {
+        id:8,
         name: 'Sudhagar R',
         specialization: 'Network Management and Administrator - Data Analyst - Web Development',
         skills: ['Python', 'JavaScript', 'Burp Suite', 'AWS'],
@@ -122,6 +130,7 @@ const students = [
         github: 'https://github.com/sudhagar-raja'
     },
     {
+        id:9,
         name: 'Bharath V',
         specialization: 'Data Scientist - AI/ML Engineer - NLP Specialist',
         skills: ['Python', 'Numpy', 'Pandas', 'Scikit-learn', 'TensorFlow', 'SQL'],
@@ -132,14 +141,59 @@ const students = [
         github: 'https://github.com/bharathvelappan'
     },
     {
+        id:10,
         name: 'Sulthan Alavudeen J',
-        specialization: 'Data Scientist - AI/ML Engineer',
+        specialization: 'Data Analyst - AI/ML Engineer',
         skills: ['Python', 'Power BI', 'Excel', 'SQL'],
         impact: 'Developed a futuristic smart city model using Machine Learning.',
         rollNumber: '24pds036',
         profileImage: 'assets/profile/24pds036.jpg',
         linkedin: 'https://www.linkedin.com/in/sulthan-alavudeen-4ab361380/',
         github: 'https://github.com/alakutty'
+    },
+    {
+        id:11,
+        name: 'Yogitha M',
+        specialization: 'Data Analyst - AI/ML Engineer',
+        skills: ['Python','R', 'Power BI', 'Excel', 'SQL'],
+        impact: 'Developed a system for fake news classification and virality prediction using Machine Learning.',
+        rollNumber: '24pds042',
+        profileImage: 'assets/profile/24pds042.jpg',
+        linkedin: 'https://www.linkedin.com/in/yogitha-m-b3016b293/',
+        github: 'https://github.com/yogitha0406'
+    },
+    {
+        id:12,
+        name: 'Abirami M',
+        specialization: 'Data Analyst - Buisness Analyst - Software Engineer',
+        skills: ['Python','R', 'Power BI', 'Excel', 'SQL'],
+        impact: 'Developed an intelligent system for startup funding prediction and investor recommendation.',
+        rollNumber: '24pds003',
+        profileImage: 'assets/profile/24pds003.jpg',
+        linkedin: 'https://linkedin.com/in/abirami-m-853a3437a',
+        github: 'https://github.com/Abiabi1409'
+    },
+    {
+        id:13,
+        name: 'Saravana Kumar T',
+        specialization: 'Data Analyst - ML Engineer - Data Scientist',
+        skills: ['Python','Power BI', 'Tableau', 'SQL'],
+        impact: 'Developed a Loan Approval Prediction model using Machine Learning',
+        rollNumber: '24pds039',
+        profileImage: 'assets/profile/24pds039.jpg',
+        linkedin: 'https://www.linkedin.com/in/saravana-kumar-88a610396/',
+        github: 'https://github.com/Saravanakumar210'
+    },
+    {
+        id:14,
+        name: 'Miracline V',
+        specialization: 'Data Analyst - Business Analyst - AI/ML Engineer',
+        skills: ['Python','Power BI', 'Tableau', 'SQL'],
+        impact: 'Developed a Diabetic Prediction model using Machine Learning.',
+        rollNumber: '24pds020',
+        profileImage: 'assets/profile/24pds020.jpg',
+        linkedin: 'https://www.linkedin.com/in/miracline-v-a06b35398/',
+        github: 'https://github.com/miracline-hub'
     }
     
 ];
