@@ -134,7 +134,7 @@ const students = [
         name: 'Bharath V',
         specialization: 'Data Scientist - AI/ML Engineer - NLP Specialist',
         skills: ['Python', 'Numpy', 'Pandas', 'Scikit-learn', 'TensorFlow', 'SQL'],
-        impact: 'Developed a predictive maintenance system for network towers utilizing Machine Learning and Generative AI',
+        impact: 'Developed a predictive maintenance system for network towers utilizing Machine Learning and Generative AI.',
         rollNumber: '24pds007',
         profileImage: 'assets/profile/24pds007.jpg',
         linkedin: 'https://www.linkedin.com/in/bharath-v-4a958028b/',
@@ -170,7 +170,7 @@ const students = [
         impact: 'Developed an intelligent system for startup funding prediction and investor recommendation.',
         rollNumber: '24pds003',
         profileImage: 'assets/profile/24pds003.jpg',
-        linkedin: 'https://linkedin.com/in/abirami-m-853a3437a',
+        linkedin: 'https://linkedin.com/in/abirami-m-853a3437a/',
         github: 'https://github.com/Abiabi1409'
     },
     {
@@ -194,7 +194,40 @@ const students = [
         profileImage: 'assets/profile/24pds020.jpg',
         linkedin: 'https://www.linkedin.com/in/miracline-v-a06b35398/',
         github: 'https://github.com/miracline-hub'
-    }
+    },
+    {
+        id:15,
+        name: 'Kamatchi Kannan K',
+        specialization: 'Data Analyst - Business Analyst - AI/ML Engineer',
+        skills: ['Python','Power BI', 'Excel', 'Word'],
+        impact: 'Developed a Smart Agriculture system utilizing Real-Time Data Analysis for Precision Farming.',
+        rollNumber: '24pds017',
+        profileImage: 'assets/profile/24pds017.jpg',
+        linkedin: 'https://www.linkedin.com/in/kamatchi-kannan-17ab9b2a8/',
+        github: 'https://github.com/Kamatchi8723'
+    },
+    {
+        id:16,
+        name: 'Rajeshwari S',
+        specialization: 'Data Analyst - Web Developer - ML Engineer',
+        skills: ['Python','SQL', 'Power BI', 'HTML', 'CSS','PHP'],
+        impact: 'Developed a Travel Recommendation System using Machine Learning.',
+        rollNumber: '24pds025',
+        profileImage: 'assets/profile/24pds025.jpg',
+        linkedin: 'https://www.linkedin.com/in/rajeshwari-s-2962a4392/',
+        github: 'https://github.com/raji292004'
+    },
+    {
+        id:17,
+        name: 'Vishnu Pradhap P',
+        specialization: 'Data Analyst - ML Engineer',
+        skills: ['Python','SQL', 'Power BI', 'Tableau'],
+        impact: 'Developed a system for UPI transaction analysis using Machine Learning.',
+        rollNumber: '24pds041',
+        profileImage: 'assets/profile/24pds041.jpg',
+        linkedin: 'https://www.linkedin.com/in/vishnu-pradhap-p-9a747331b/',
+        github: 'https://github.com/Vishnupradhap'
+    },
     
 ];
 
