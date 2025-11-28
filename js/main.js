@@ -228,6 +228,94 @@ const students = [
         linkedin: 'https://www.linkedin.com/in/vishnu-pradhap-p-9a747331b/',
         github: 'https://github.com/Vishnupradhap'
     },
+    {
+        id:18,
+        name: 'Raja Parakirama Pandian U ',
+        specialization: 'Data Analyst - ML Engineer - Web Developer',
+        skills: ['Python','SQL', 'Power BI', 'MongoDB'],
+        impact: 'Developed a system using Python for behavioral data analysis to improve student performance.',
+        rollNumber: '24pds024',
+        profileImage: 'assets/profile/24pds024.jpg',
+        linkedin: 'https://www.linkedin.com/in/u-raja-parakirama-pandian-4b91952bb/',
+        github: 'https://github.com/rajaparakiramapandian-jpg'
+    },
+    {
+        id:19,
+        name: 'Janarthanan J ',
+        specialization: 'Data Analyst - ML Engineer - Web Developer',
+        skills: ['Python', 'Power BI', 'Tableau'],
+        impact: 'Developed a system using Python for behavioral data analysis to improve student performance.',
+        rollNumber: '24pds043',
+        profileImage: 'assets/profile/24pds043.jpg',
+        linkedin: 'https://www.linkedin.com/in/janarthanan-j-123456789/',
+        github: 'https://github.com/janarthanan-j'
+    },
+    {
+        id:20,
+        name: 'Hariharan N',
+        specialization: 'UI/UX Designer - Data Analyst - Video Editor',
+        skills: ['HTML', 'CSS', 'Figma'],
+        impact: 'Developed the UI/UX design for a Food Delivery Mobile Application.',
+        rollNumber: '24pds014',
+        profileImage: 'assets/profile/24pds014.jpg',
+        linkedin: 'https://www.linkedin.com/in/hari-nandagopal-98214331b/',
+        github: 'https://github.com/HariNandagopal'
+    },
+    {
+        id:21,
+        name: 'Abinaya  R',
+        specialization: 'UI/UX Designer - Data Analyst',
+        skills: ['Python', 'Power BI', 'SQL','MongoDB'],
+        impact: 'Developed a Coffee Shop Management System concurrently with a Machine Learning-driven system for noise pollution analysis displayed in a heatmap format.',
+        rollNumber: '24pds002',
+        profileImage: 'assets/profile/24pds002.jpg',
+        linkedin: 'https://www.linkedin.com/in/abinaya-r-b26ab12b6/',
+        github: 'https://github.com/abinaya-002'
+    },
+    {
+        id:22,
+        name: 'Deepika M',
+        specialization: 'Data Analyst - Machine Learning Engineer - Web Developer',
+        skills: ['Python', 'Power BI', 'SQL','MS Office', 'PHP','JavaScript'],
+        impact: 'Developed a Machine Learning system for Soil Fertility Prediction and Visualization.',
+        rollNumber: '24pds009',
+        profileImage: 'assets/profile/24pds009.jpg',
+        linkedin: 'https://www.linkedin.com/in/deepika-m-115429371/',
+        github: 'https://github.com/deepika-1103'
+    },
+    {
+        id:22,
+        name: 'Kumaravel E',
+        specialization: 'Data Analyst - Machine Learning Engineer - Web Designer',
+        skills: ['Python', 'Power BI', 'SQL','Excel', 'HTML','CSS'],
+        impact: 'Developed a Machine Learning system for Soil Fertility Prediction and Visualization.',
+        rollNumber: '24pds018',
+        profileImage: 'assets/profile/24pds018.jpg',
+        linkedin: 'https://www.linkedin.com/in/kumaravel-e7099232a6/',
+        github: 'https://github.com/kumaravel13-Max'
+    },
+    {
+        id:23,
+        name: 'Jasmine J',
+        specialization: 'Data Analyst - AI/ML Engineer',
+        skills: ['Python', 'Power BI', 'SQL','Excel', 'HTML','CSS'],
+        impact: 'Developed a Rainfall Prediction system using Machine Learning.',
+        rollNumber: '24pds015',
+        profileImage: 'assets/profile/24pds015.jpg',
+        linkedin: 'https://www.linkedin.com/in/jasmine-j-/',
+        github: 'https://github.com/jasmine2092003'
+    },
+    {
+        id:24,
+        name: 'Vigneshwarapandiyan',
+        specialization: 'Machine Learning Engineer - Game Developer, Video Editor',
+        skills: ['Python', 'Power BI', 'SQL'],
+        impact: 'Developed a Machine Learning system for predicting Electric Vehicle (EV) performance.',
+        rollNumber: '24pds028',
+        profileImage: 'assets/profile/24pds028.jpg',
+        linkedin: 'https://www.linkedin.com/in/jasmine-j-/',
+        github: 'https://github.com/jasmine2092003'
+    },
     
 ];
 
@@ -255,7 +343,10 @@ function createStudentCard(student, index) {
             ${student.impact}
         </div>
         <div class="card-actions">
-            <button class="btn-resume" onclick="downloadResume(event, ${index})">Download Full Resume (PDF)</button>
+            <button class="btn-resume" onclick="downloadResume(event, ${index})">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8v-2zm0-3h8v2H8v-2z"/></svg>
+                    Download Resume
+                </button>
             <div class="social-links">
                 <a href="${student.linkedin || '#'}" class="social-link" target="_blank" rel="noopener noreferrer">
                     <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
