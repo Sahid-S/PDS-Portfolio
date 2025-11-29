@@ -493,7 +493,7 @@ const students = [
     {
         id:42,
         name: 'Abdul Baseer J',
-        specialization: 'Full Stack Developer - Digital Marketing Specialist - Data Analyst',
+        specialization: 'Full Stack Developer - Data Analyst - Digital Marketing Specialist',
         skills: ['Python', 'JavaScript','SQL','Power BI','Excel'],
         impact: 'Developed a system for Electricity Cost Prediction using Machine Learning.',
         rollNumber: '24Pds001',
