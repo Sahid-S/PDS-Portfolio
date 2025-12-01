@@ -322,7 +322,7 @@ const students = [
         specialization: 'Machine Learning Engineer - Data Analyst - Web Developer',
         skills: ['Python', 'Power BI', 'SQL','HTML','CSS'],
         impact: 'Developed the frontend for an e-commerce website with a functional shopping cart, using HTML, CSS, and JavaScript.',
-        rollNumber: '24Pds026',
+        rollNumber: '24pds026',
         profileImage: 'assets/profile/24pds026.jpg',
         linkedin: 'https://www.linkedin.com/in/rekila-s-b0ab881b9/',
         github: 'https://github.com/reki2002'
@@ -333,7 +333,7 @@ const students = [
         specialization: 'Machine Learning Engineer - Data Analyst - Web Developer',
         skills: ['Python', 'Power BI', 'SQL','HTML','CSS'],
         impact: 'Developed a Machine Learning system for Soil Health Index prediction and visualization.',
-        rollNumber: '24Pds019',
+        rollNumber: '24pds019',
         profileImage: 'assets/profile/24pds019.jpg',
         linkedin: 'https://www.linkedin.com/in/lathika-k-880794399/',
         github: 'https://github.com/lathikaLat01'
@@ -344,7 +344,7 @@ const students = [
         specialization: 'UI/UX Designer- Brand Identity Designer - Web Developer',
         skills: ['HTML','CSS', 'Javascript', 'Figma', 'Framer','Affinity Designer'],
         impact: 'Developed and implemented a new website design for Eyenet Institute.',
-        rollNumber: '24Pds038',
+        rollNumber: '24pds038',
         profileImage: 'assets/profile/24pds038.jpg',
         linkedin: 'https://www.linkedin.com/in/surya0607/',
         github: 'https://github.com/imsurya06'
@@ -355,7 +355,7 @@ const students = [
         specialization: 'Python Developer - Machine Learning Engineer - Data Analyst',
         skills: ['Python', 'Power BI', 'Numpy','Pandas', 'Scikit-learn'],
         impact: 'Developed predictive and analytical models using Machine Learning for climate change studies.',
-        rollNumber: '24Pds044',
+        rollNumber: '24pds044',
         profileImage: 'assets/profile/24pds044.jpg',
         linkedin: 'https://www.linkedin.com/in/swathy-m-/',
         github: 'https://github.com/swathy23492'
@@ -366,7 +366,7 @@ const students = [
         specialization: 'Machine Learning Engineer - Data Analyst - Java developer',
         skills: ['Python', 'Java', 'Javascript','SQL', 'PHP','numpy','pandas'],
         impact: 'Developed a comprehensive analysis framework to study mobile phone addiction in teenagers.',
-        rollNumber: '24Pds030',
+        rollNumber: '24pds030',
         profileImage: 'assets/profile/24pds030.jpg',
         linkedin: 'https://www.linkedin.com/in/sambath-raja-4a4349308/',
         
@@ -377,7 +377,7 @@ const students = [
         specialization: 'Machine Learning Engineer - Data Analyst',
         skills: ['Python','SQL', 'MongoDB'],
         impact: 'Developed a Personalized Diet Recommendation system using Machine Learning.',
-        rollNumber: '24Pds013',
+        rollNumber: '24pds013',
         profileImage: 'assets/profile/24pds013.jpg',
         linkedin: 'https://www.linkedin.com/in/hari-prasath-718429348/',
         github: 'https://github.com/Hari1112003'
@@ -388,7 +388,7 @@ const students = [
         specialization: 'DL/ML Engineer - Neural Network Specialist - Web Developer',
         skills: ['Python', 'Numpy','Pandas', 'Django', 'Scikit-learn','HTML','CSS'],
         impact: 'Developed a Machine Learning (ML) model for detecting errors in sensor parameters.',
-        rollNumber: '24Pds031',
+        rollNumber: '24pds031',
         profileImage: 'assets/profile/24pds031.jpg',
         linkedin: 'https://www.linkedin.com/in/shri-haran-b-a359a4337/',
         github: 'https://github.com/shriharanofficial'
@@ -399,7 +399,7 @@ const students = [
         specialization: 'Machine Learning Engineer - Data Analyst',
         skills: ['Python', 'SQL','HTML','CSS'],
         impact: 'Developed a Library Management System enhanced with Machine Learning capabilities.',
-        rollNumber: '24Pds021',
+        rollNumber: '24pds021',
         profileImage: 'assets/profile/24pds021.jpg',
         linkedin: 'https://www.linkedin.com/in/nagaraj-k-178746375/',
         github: 'https://github.com/nagaraj18-hub'
@@ -410,7 +410,7 @@ const students = [
         specialization: 'Data Analyst',
         skills: ['Python', 'Power BI'],
         impact: 'Developed a system for Soil Deficiency Classification based on nutrient levels.',
-        rollNumber: '24Pds011',
+        rollNumber: '24pds011',
         profileImage: 'assets/profile/24pds011.jpg',
         linkedin: 'https://www.linkedin.com/in/eswari-velu-41b540294/',
     },
@@ -420,7 +420,7 @@ const students = [
         specialization: 'Web Developer - Machine Learning Engineer - Graphic Designer',
         skills: ['Python','Javascript','Figma','Framer','Affinity Designer'],
         impact: 'Developed an AI-powered Phishing Message Classifier.',
-        rollNumber: '24Pds023',
+        rollNumber: '24pds023',
         profileImage: 'assets/profile/24pds023.jpg',
         linkedin: 'https://www.linkedin.com/in/nithin-k-rajan-35a163293/',
     },
@@ -430,7 +430,7 @@ const students = [
         specialization: 'Data Analyst - Generative AI Specialist - Agentic AI Developer',
         skills: ['Python', 'React', 'JavaScript','Express.js', 'MongoDB'],
         impact: 'Developed a Machine Learning system for Movie Genre Classification.',
-        rollNumber: '24Pds010',
+        rollNumber: '24pds010',
         profileImage: 'assets/profile/24pds010.jpg',
         linkedin: 'https://www.linkedin.com/in/dhana-lingam-149903284/',
         github: 'https://github.com/Itzyourlee'
@@ -441,7 +441,7 @@ const students = [
         specialization: 'Machine Learning Engineer - Data Analyst',
         skills: ['Python','SQL', 'Power BI'],
         impact: 'Developed a Machine Learning system for Formula 1 Podium Prediction.',
-        rollNumber: '24Pds027',
+        rollNumber: '24pds027',
         profileImage: 'assets/profile/24pds027.jpg',
         linkedin: 'http://www.linkedin.com/in/rishi-kumar-s-234228392/',
         github: 'https://github.com/Rishistiglitz'
@@ -452,7 +452,7 @@ const students = [
         specialization: 'Data Scientist - Data Analyst - Game Developer',
         skills: ['Python', 'HTML','CSS'],
         impact: 'Developed a Machine Learning system for Car Resale Value Prediction.',
-        rollNumber: '24Pds008',
+        rollNumber: '24pds008',
         profileImage: 'assets/profile/24pds008.jpg',
         linkedin: 'https://www.linkedin.com/in/chandrahasan-j-315a81322/',
         github: 'https://github.com/Charana28-03'
@@ -463,7 +463,7 @@ const students = [
         specialization: 'Machine Learning Engineer - Data Analyst - Java developer',
         skills: ['Python', 'Java', 'Javascript','SQL', 'PHP','numpy','pandas'],
         impact: 'Developed a comprehensive analysis framework to study mobile phone addiction in teenagers.',
-        rollNumber: '24Pds032',
+        rollNumber: '24pds032',
         profileImage: 'assets/profile/24pds032.jpg',
         linkedin: 'https://www.linkedin.com/in/sambath-raja-4a4349308/',
         github: 'https://github.com/swathyM'
@@ -474,7 +474,7 @@ const students = [
         specialization: 'Machine Learning Engineer - Data Analyst - Cloud Computing',
         skills: ['Python','SQL', 'Power BI','Oracle Cloud'],
         impact: 'Developed a Crop Recommendation System based on soil nutrient analysis.',
-        rollNumber: '24Pds012',
+        rollNumber: '24pds012',
         profileImage: 'assets/profile/24pds012.jpg',
         linkedin: 'https://www.linkedin.com/in/gopika-sri-m-304199279/',
         
@@ -485,7 +485,7 @@ const students = [
         specialization: 'Data Analyst - AI/ML Engineer',
         skills: ['Python', 'SQL','Power BI','Tableau'],
         impact: 'Developed a system for Diabetics Diagnosis Prediction utilizing the Support Vector Machine (SVM) algorithm.',
-        rollNumber: '24Pds037',
+        rollNumber: '24pds037',
         profileImage: 'assets/profile/24pds037.jpg',
         linkedin: 'https://www.linkedin.com/in/a-surjith-kumar-221bb92b2/',
         github: 'https://github.com/asurjithkumar-collab'
@@ -496,7 +496,7 @@ const students = [
         specialization: 'Full Stack Developer - Data Analyst - Digital Marketing Specialist',
         skills: ['Python', 'JavaScript','SQL','Power BI','Excel'],
         impact: 'Developed a system for Electricity Cost Prediction using Machine Learning.',
-        rollNumber: '24Pds001',
+        rollNumber: '24pds001',
         profileImage: 'assets/profile/24pds001.jpg',
         linkedin: 'https://www.linkedin.com/in/abdul-baseer-0418801b6/',
         
@@ -507,7 +507,7 @@ const students = [
         specialization: 'Data Analyst - Business Analyst - Machine Learning Engineer',
         skills: ['Python', 'R','SQl','Power BI','Excel'],
         impact: 'Developed a system for credit scoring and customer segmentation.',
-        rollNumber: '24Pds034',
+        rollNumber: '24pds034',
         profileImage: 'assets/profile/24pds034.jpg',
         linkedin: 'https://www.linkedin.com/in/stella-t-stella-t-5b879a396/',
         github: 'https://github.com/stella2210'
