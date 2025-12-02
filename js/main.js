@@ -509,7 +509,7 @@ const students = [
         impact: 'Developed a system for credit scoring and customer segmentation.',
         rollNumber: '24pds034',
         profileImage: 'assets/profile/24pds034.jpg',
-        linkedin: 'https://www.linkedin.com/in/stella-t-stella-t-5b879a396/',
+        linkedin: 'https://www.linkedin.com/in/stella-t-5b879a396/',
         github: 'https://github.com/stella2210'
     },
 ];
