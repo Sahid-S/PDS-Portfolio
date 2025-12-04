@@ -90,13 +90,20 @@ body {
 .hero {
     background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
     color: #ffffff;
-    padding: 100px 20px;
+    padding: 60px 20px 100px;
     text-align: center;
 }
 
 .hero-content {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.college-logo {
+    width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+    filter: brightness(0) invert(1);
 }
 
 .hero h1 {
