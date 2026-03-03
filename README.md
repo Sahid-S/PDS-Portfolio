@@ -6,7 +6,7 @@ A professional portfolio and recruitment website showcasing MSc Data Science gra
 
 This website serves as a talent showcase for MSc Data Science graduates, providing employers and recruiters with comprehensive profiles, downloadable resumes, and direct contact options for hiring inquiries.
 
-**Live Demo:** [View Portfolio](https://your-github-username.github.io/PDS-Portfolio)
+**Live Demo:** [View Portfolio](https://sahid-s.github.io/PDS-Portfolio/)
 
 ## Features
 
